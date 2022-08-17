@@ -1,0 +1,26 @@
+{
+  "name": "gifo",
+  "version": "0.1.0",
+  "description": "Automatic GIF sender for the GIPHY Twitch extension.",
+  "main": "index.js",
+  "scripts": {
+    "audit": "npx upgradeps -v",
+    "lint": "npx prettier-standard",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "figures": "^5.0.0",
+    "puppeteer-core": "^16.1.1",
+    "random-words": "^1.2.0"
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.4.1",
+    "upgradeps": "^2.0.4"
+  },
+  "author": "Luciano Ropero <lropero@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module"
+}
