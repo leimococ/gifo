@@ -12,7 +12,7 @@
     "chalk": "^5.0.1",
     "dotenv": "^16.0.1",
     "figures": "^5.0.0",
-    "puppeteer-core": "^16.1.1",
+    "puppeteer-core": "^16.2.0",
     "random-words": "^1.2.0"
   },
   "devDependencies": {
