@@ -114,9 +114,15 @@ const gif = async term => {
 
 const run = () => {
   setTimeout(async () => {
-    const [random] = randomWords(1)
+    const [random1, random2] = randomWords(2)
     const term = shuffle(terms)[Math.floor(Math.random() * terms.length)]
-    await gif(shuffle([random, term]).join(' '))
+    try {
+      await gif(
+        shuffle([random1, random2, term])
+          .slice(0, Math.floor(Math.random() * 3) + 1)
+          .join(' ')
+      )
+    } catch (error) {}
     run()
   }, process.env.DELAY)
 }
